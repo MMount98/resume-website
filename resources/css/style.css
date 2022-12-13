@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+}
+
+li, a {
+    font-family: manrope, sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/*Unverisal flex content*/
+
+.flex-content {
+    display: flex;
+    padding: 0 1.5rem;
+}
+
+/*Header and nav bar*/
+
+header{
+    padding: 1rem 1.5rem;
+    
+    
+}
+header .desktop {
+    display: flex;
+    align-items: center;
+    
+    
+}
+header .logo {
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    
+}
+
+header .logo img {
+    margin-right: .5rem;
+    
+}
+
+header li {
+    display: inline;
+    padding-right: 1rem;
+    
+}
+
+header li:last-child {
+    padding-left: 0;
+    
+}
+
+/* Banner */
+
+#banner {
+    flex-wrap: nowrap;
+    
+}
+
+#banner .banner-img {
+    border-left:0;
+    padding-right: 20rem;
+    
+}
+
+#banner .banner-quote {
+    justify-content: center;
+    padding:20rem 25rem;
+    width:100%;
+    height:100%;
+    
+}
+
+#banner h2 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    background-color: red;
+    
+    
+}
+
+
+
+/* footer */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+    
+}
+
+.social li {
+    display: inline-block;
+    padding: 0 20px;
+    align-items: flex-end;
+    
+}

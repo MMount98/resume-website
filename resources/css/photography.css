@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+}
+
+html, li, a {
+    font-family: manrope, sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+/*header and nav bar*/
+
+header{
+    padding: 1rem 1.5rem;
+    
+    
+}
+header .desktop {
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+header .logo {
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    
+}
+
+header .logo img {
+    margin-right: .5rem;
+    
+}
+
+header li {
+    display: inline;
+    padding-right: 1rem;
+    
+}
+
+header li:last-child {
+    padding-left: 0;
+    
+}
+
+/*Banner*/
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 75%;
+    padding-left: 1rem;
+}
+
+.text {
+    font-size:1.25rem;
+    padding-left:1.25rem;
+}
+
+
+
+/*Gallery*/
+
+#Gallery{
+    display: flex;
+    flex-direction: row;
+    max-width: 75rem;
+    height: 100%;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-left: 11.5rem;
+}
+#Gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit:cover;
+    object-position: bottom;
+    margin-top: .5rem;
+    padding: 0 .24rem;
+    border-radius: .75rem;
+}
+
+img:hover {
+    cursor: pointer;
+    transition:0.5s;
+    opacity: 0.5;
+}
+
+@media (max-width:800px) {
+    #Gallery img {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px){
+    #gallery img {
+        width: 100%;
+    }
+}
+
+/* footer */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+    
+}
+
+.social li {
+    display: inline-block;
+    padding: 0 20px;
+    align-items: flex-end;
+    
+}
