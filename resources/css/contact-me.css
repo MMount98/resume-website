@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background:antiquewhite;
+}
+
+li, a, h2, p {
+    font-family: manrope, sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/*header and nav bar*/
+
+header{
+    padding: 1rem 1.5rem;
+    
+    
+}
+header .desktop {
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+header .logo {
+    flex-grow:1;
+    display: flex;
+    align-items: center;
+    
+}
+
+header .logo img {
+    margin-right: .5rem;
+    
+}
+
+header li {
+    display: inline;
+    padding-right: 1rem;
+    
+}
+
+header li:last-child {
+    padding-left: 0;
+    
+}
+
+/*Contact Form*/
+
+.wrapper {
+    max-width: 43.75rem;
+    margin: 3.13rem auto;
+    padding: 2.5rem;
+    box-shadow: 0 0 .32rem rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin: 3.13rem;
+    font-size: 2.19rem;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 3.13rem;
+}
+
+.inner-top-buttons p {
+    font-size: .75rem;
+}
+
+.inner-top-buttons .fa {
+    font-size: 1.875rem;
+    margin-bottom: .625rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.13rem;
+}
+
+.form-title {
+    font-size: 1.56rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.input-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.inner-msg {
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.input > input {
+    width: 16.25rem;
+    padding: .625rem 1.25rem;
+}
+
+.msg > textarea {
+    width: 100%;
+    padding: .625rem 1.25rem;
+    height: 5rem;
+}
+
+.btn,
+button {
+    border: .125rem solid black;
+    padding: .625rem 1.25rem;
+    color:black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: black;
+    color:#6465a5;
+}
+
+.btn button {
+    border:none;
+}
+
+::-webkit-input-placeholder {
+    color:black;
+}
+
+::-moz-input-placeholder {
+    color:black;
+}
+
+::-ms-input-placeholder {
+    color:black;
+}
+
+@media screen and (max-width: 640px;) {
+    .input-form{
+        flex-direction: column;
+    }
+    .input:first-child > input {
+        margin-bottom: .625rem;
+    }
+    .form .input > input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px;) {
+    .address {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-address {
+        margin-bottom: 20px;
+    }
+}
+/* footer */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+    
+}
+
+.social li {
+    display: inline-block;
+    padding: 0 20px;
+    align-items: flex-end;
+    
+}
