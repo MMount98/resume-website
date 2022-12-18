@@ -7,33 +7,24 @@
     background-color:antiquewhite;
 }
 
-li, a {
+html, li, a {
     font-family: manrope, sans-serif;
     font-weight: 500px;
     font-size: 16px;
     color: black;
     text-decoration: none;
+    
 }
 
-/*Unverisal flex content*/
-
-.flex-content {
-    display: flex;
-    padding: 0 1.5rem;
-}
-
-/*Header and nav bar*/
+/*header and nav bar*/
 
 header{
     padding: 1rem 1.5rem;
-    box-shadow: 0 0 .32rem rgba(0, 0, 0, 0.5);
-    
 }
+
 header .desktop {
     display: flex;
     align-items: center;
-    
-    
 }
 header .logo {
     flex-grow:1;
@@ -44,63 +35,97 @@ header .logo {
 
 header .logo img {
     margin-right: .5rem;
-    
 }
 
 header li {
     display: inline;
     padding-right: 1rem;
-    
 }
 
 header li:last-child {
     padding-left: 0;
-    
 }
 
-/* Banner */
+/*Banner*/
 
-#banner {
-    display: flex;
+.container {
+    display:flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2rem;
-    
-    
-}
-
-#banner .banner-img img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15%;
-    padding-left: 2rem;
+    padding: 2rem 0;
     
 }
 
-#banner .banner-quote {
-    font-size: 3rem;
-    padding-left: 1.25rem;
-    
+.image img {
+    border-radius: 10%;
+    box-shadow: 0 0 .32rem rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 5rem;
+    padding-bottom: 2.25rem;
+}
+
+.text-container {
+    margin:2rem;
+    padding-left:2rem;
+    box-shadow: 0 0 .32rem rgba(0, 0, 0, 0.5);
+}
+
+.text, 
+    a {
+    padding-left:1.25rem;
+}
+
+#banner a {
+    transition: all 0.5s ease;
+    color:#76b8f1;
     
 }
 
+#banner a:hover {
+    color:#7a60d7;
+}
 
+/*Portfolio*/
 
+h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
 
+.inner-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: 0 0 .32rem rgba(0,0,0,0.5);
+}
 
-/* footer */
+.project-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: no-wrap;
+    align-items: center;
+}
+
+.project-box .project-text {
+    text-align: center;
+    padding: 2rem;
+    border:black;
+}
+
+/* Footer */
 
 .social {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 20%;
-    
+    padding: 30px 20%;  
 }
 
 .social li {
     display: inline-block;
     padding: 0 20px;
     align-items: flex-end;
-    
 }
