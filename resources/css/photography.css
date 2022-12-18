@@ -7,13 +7,12 @@
     background-color:antiquewhite;
 }
 
-html, li, a {
+li, a, h2, p {
     font-family: manrope, sans-serif;
     font-weight: 500px;
     font-size: 16px;
     color: black;
     text-decoration: none;
-    
 }
 
 /*header and nav bar*/
@@ -21,14 +20,12 @@ html, li, a {
 header{
     padding: 1rem 1.5rem;
     box-shadow: 0 0 .32rem rgba(0, 0, 0, 0.5);
-    
+    margin-bottom: 2rem;
 }
+
 header .desktop {
     display: flex;
     align-items: center;
-    
-    
-    
 }
 header .logo {
     flex-grow:1;

@@ -20,8 +20,9 @@ li, a, h2, p {
 header{
     padding: 1rem 1.5rem;
     box-shadow: 0 0 .32rem rgba(0, 0, 0, 0.5);
-    
+    margin-bottom: 2rem;
 }
+
 header .desktop {
     display: flex;
     align-items: center;
