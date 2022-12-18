@@ -20,7 +20,7 @@ html, li, a {
 
 header{
     padding: 1rem 1.5rem;
-    
+    box-shadow: 0 0 .32rem rgba(0, 0, 0, 0.5);
     
 }
 header .desktop {
