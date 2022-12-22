@@ -78,13 +78,23 @@ h2 {
 }
 
 #banner a {
-    transition: all 0.5s ease;
-    color:#76b8f1;
-    
+  color: #6f51ff;
+  text-decoration: none;
+  display: inline;
+  background-image: linear-gradient(to bottom, transparent 20%, currentColor 21%);
+  
+  background-position: 0 1em;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  
+  transition: background-size 0.5s ease-in-out 0.2s;
 }
 
-#banner a:hover {
-    color:#7a60d7;
+#banner a:hover,
+#banner a:focus {
+    background-size: 100% 2px;
+    transition-delay: 0s;
+    color:purple;
 }
 
 /*Portfolio*/

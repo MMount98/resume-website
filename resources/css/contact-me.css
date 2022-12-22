@@ -1,23 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap');
+/*Unversal Rules*/
 
-*{
+body {
+    background-color: #000;
+    font-family: Arial;
+  }
+  
+  * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color:antiquewhite;
-}
+  }
 
-li, a, h2, p {
-    font-family: manrope, sans-serif;
-    font-weight: 500px;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-}
+/*Header and Nav*/
 
-/*header and nav bar*/
-
-header{
+  header{
+    background-color: white;
     padding: 1rem 1.5rem;
     box-shadow: 0 0 .32rem rgba(0, 0, 0, 0.5);
     margin-bottom: 2rem;
@@ -46,127 +41,224 @@ header li:last-child {
     padding-left: 0;
 }
 
+header li,
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
 /*Contact Form*/
 
-.wrapper {
-    max-width: 43.75rem;
-    margin: 3.13rem auto;
-    padding: 2.5rem;
-    box-shadow: 0 0 .32rem rgba(0,0,0,0.5);
-}
-
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: black;
-    margin: 3.13rem;
-    font-size: 2.19rem;
-}
-
-.top-buttons {
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  
+  }
+  
+  .background {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-bottom: 3.13rem;
-}
-
-.inner-top-buttons p {
-    font-size: .75rem;
-}
-
-.inner-top-buttons .fa {
-    font-size: 1.875rem;
-    margin-bottom: .625rem;
-}
-
-.form {
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #383838;
+    border-radius: 15px;
+    
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #ff0467;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #bbb;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 3.13rem;
-}
-
-.form-title {
-    font-size: 1.56rem;
-    margin-bottom: 1.25rem;
-    text-align: center;
-}
-
-.input-form {
+  }
+  
+  .app-title {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ff9fc5;
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #ff9fc5;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 1.25rem;
-}
-
-.inner-msg {
-    width: 100%;
-    margin-bottom: 1.25rem;
-}
-
-.input > input {
-    width: 16.25rem;
-    padding: .625rem 1.25rem;
-}
-
-.msg > textarea {
-    width: 100%;
-    padding: .625rem 1.25rem;
-    height: 5rem;
-}
-
-.btn,
-button {
-    border: .125rem solid black;
-    padding: .625rem 1.25rem;
-    color:black;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #ff9fc5;
+    font-size: 14px;
     cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.btn:hover,
-button:hover {
-    background: black;
-    color:#6465a5;
-}
-
-.btn button {
-    border:none;
-}
-
-::-webkit-input-placeholder {
-    color:black;
-}
-
-::-moz-input-placeholder {
-    color:black;
-}
-
-::-ms-input-placeholder {
-    color:black;
-}
-
-@media screen and (max-width: 640px;) {
-    .input-form{
-        flex-direction: column;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #ffffff;
+  }
+  
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
     }
-    .input:first-child > input {
-        margin-bottom: .625rem;
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
     }
-    .form .input > input {
-        width: 100%;
+  
+    .app-title {
+      flex-direction: row;
     }
-}
-
-@media screen and (max-width: 580px;) {
-    .address {
-        flex-direction: column;
-        align-items: center;
+  
+    .app-title span {
+      margin-right: 12px;
     }
-    .inner-address {
-        margin-bottom: 20px;
+  
+    .app-title:after {
+      display: none;
     }
-}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+  
 /* footer */
 
 .social {
@@ -174,6 +266,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 30px 20%;
+    background-color:white;
     
 }
 
